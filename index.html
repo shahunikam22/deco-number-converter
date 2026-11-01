@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Universal Number System Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Universal Number System Converter</h1>
+      <p class="subtitle">Binary &bull; Octal &bull; Decimal &bull; Hexadecimal</p>
+    </header>
+
+    <section class="card">
+      <h2>1. Select the number system of your input</h2>
+      <div class="base-select" id="baseSelect">
+        <button type="button" data-base="2">Binary</button>
+        <button type="button" data-base="8">Octal</button>
+        <button type="button" data-base="10" class="active">Decimal</button>
+        <button type="button" data-base="16">Hex</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>2. Enter a number</h2>
+      <input type="text" id="numberInput" placeholder="Enter a number" autocomplete="off" />
+      <p class="hint" id="hint">Allowed: digits 0-9.</p>
+      <p class="error" id="error" role="alert"></p>
+      <div class="actions">
+        <button type="button" id="convertBtn" class="primary">Convert</button>
+        <button type="button" id="clearBtn" class="secondary">Clear</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>3. Results</h2>
+      <div class="results">
+        <div class="result">
+          <div class="result-head"><span>BINARY (Base 2)</span><button type="button" class="copy" data-target="outBin">Copy</button></div>
+          <div class="value" id="outBin">&mdash;</div>
+        </div>
+        <div class="result">
+          <div class="result-head"><span>OCTAL (Base 8)</span><button type="button" class="copy" data-target="outOct">Copy</button></div>
+          <div class="value" id="outOct">&mdash;</div>
+        </div>
+        <div class="result">
+          <div class="result-head"><span>DECIMAL (Base 10)</span><button type="button" class="copy" data-target="outDec">Copy</button></div>
+          <div class="value" id="outDec">&mdash;</div>
+        </div>
+        <div class="result">
+          <div class="result-head"><span>HEXADECIMAL (Base 16)</span><button type="button" class="copy" data-target="outHex">Copy</button></div>
+          <div class="value" id="outHex">&mdash;</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>Digital Electronics Mini-Project &middot; Unsigned whole numbers only</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
