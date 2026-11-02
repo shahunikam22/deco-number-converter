@@ -3,9 +3,9 @@
 A web-based converter for **Binary, Octal, Decimal and Hexadecimal** number systems.
 
 **Subject:** Digital Electronics and Computer Organization (DECO) mini project
-**Student:** Sami Sameer Shaikh, S.Y. IT-C, Roll No. 43
+**Student:** Shahu Nikam, S.Y. IT-C, Roll No. 41
 **Institute:** AISSMS Institute of Information Technology, Pune (2026-27)
-**Guide:** Mrs. Pragati Mahale
+**Guide:** Dr. Pragati  Mahale
 
 ## Features
 - Choose the input number system (Binary, Octal, Decimal, Hex)
